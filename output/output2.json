@@ -1,0 +1,8 @@
+{
+  "total_transactions": 15,
+  "high_confidence_coverage": 1,
+  "salary_high_confidence_rate": 0.267,
+  "negative_behavior_high_confidence_rate": 0.133,
+  "average_confidence": 0.975,
+  "confidence_threshold": 0.7
+}
