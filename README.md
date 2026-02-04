@@ -28,9 +28,4 @@ Given a bank statement file, the system:
 ## Model Output
 The model output is saved as JSON and committed to the repository.
 
-## Input Data
-- Sample input file is provided in:
-  Each transaction includes:
-- Original transaction details
-- Predicted label
-- Confidence score
+
