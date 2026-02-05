@@ -5,7 +5,7 @@
 This project analyzes bank statement data (CSV/PDF) using **Google Gemini** to classify each transaction and flag potential anomalies.  
 Each transaction is labeled and assigned a confidence score to indicate how certain the model is about its classification.
 
-The goal is to demonstrate **what the model outputs** for a given bank statement, not to run a live API demo during review.
+The goal is to demonstrate **what the model outputs** for a given bank statement.
 
 ---
 
