@@ -1,0 +1,175 @@
+{
+  "status": "success",
+  "total_transactions": 15,
+  "transactions": [
+    {
+      "Date": "01-11-2024",
+      "Description": "OPENING BALANCE",
+      "Debit": "",
+      "Credit": "",
+      "Balance": 45000,
+      "label": "normal_transaction",
+      "confidence": 1
+    },
+    {
+      "Date": "03-11-2024",
+      "Description": "SALARY CREDIT - ABC TECH PVT LTD",
+      "Debit": "",
+      "Credit": 50000,
+      "Balance": 95000,
+      "label": "salary_credit",
+      "confidence": 1
+    },
+    {
+      "Date": "03-12-2024",
+      "Description": "SALARY CREDIT - ABC TECH PVT LTD",
+      "Debit": "",
+      "Credit": 50000,
+      "Balance": 145000,
+      "label": "salary_credit",
+      "confidence": 1
+    },
+    {
+      "Date": "03-01-2025",
+      "Description": "SALARY CREDIT - ABC TECH PVT LTD",
+      "Debit": "",
+      "Credit": 50000,
+      "Balance": 195000,
+      "label": "salary_credit",
+      "confidence": 1
+    },
+    {
+      "Date": "07-11-2024",
+      "Description": "EMI DEBIT - HDFC HOME LOAN",
+      "Debit": 15000,
+      "Credit": "",
+      "Balance": 80000,
+      "label": "emi_debit",
+      "confidence": 1
+    },
+    {
+      "Date": "07-12-2024",
+      "Description": "EMI DEBIT - HDFC HOME LOAN",
+      "Debit": 15000,
+      "Credit": "",
+      "Balance": 130000,
+      "label": "emi_debit",
+      "confidence": 1
+    },
+    {
+      "Date": "07-01-2025",
+      "Description": "ECS RETURN - EMI BOUNCE - INSUFFICIENT FUNDS",
+      "Debit": 500,
+      "Credit": "",
+      "Balance": 194500,
+      "label": "negative_behavior",
+      "confidence": 1
+    },
+    {
+      "Date": "08-01-2025",
+      "Description": "UPI TRANSFER TO UNKNOWN ID X9QK",
+      "Debit": 45000,
+      "Credit": "",
+      "Balance": 149500,
+      "label": "normal_transaction",
+      "confidence": 0.9
+    },
+    {
+      "Date": "08-01-2025",
+      "Description": "UPI TRANSFER TO UNKNOWN ID X9QK",
+      "Debit": 45000,
+      "Credit": "",
+      "Balance": 104500,
+      "label": "normal_transaction",
+      "confidence": 0.9
+    },
+    {
+      "Date": "09-01-2025",
+      "Description": "INTERNATIONAL CARD PAYMENT - USD 300",
+      "Debit": 25000,
+      "Credit": "",
+      "Balance": 79500,
+      "label": "normal_transaction",
+      "confidence": 0.95
+    },
+    {
+      "Date": "10-01-2025",
+      "Description": "PENALTY CHARGE - MIN BALANCE",
+      "Debit": 1200,
+      "Credit": "",
+      "Balance": 78300,
+      "label": "negative_behavior",
+      "confidence": 1
+    },
+    {
+      "Date": "15-02-2025",
+      "Description": "SALARY CREDIT - UNKNOWN SOURCE",
+      "Debit": "",
+      "Credit": 18000,
+      "Balance": 96300,
+      "label": "salary_credit",
+      "confidence": 0.95
+    },
+    {
+      "Date": "18-02-2025",
+      "Description": "UTILITY BILL PAYMENT - ELECTRICITY",
+      "Debit": 3000,
+      "Credit": "",
+      "Balance": 93300,
+      "label": "normal_transaction",
+      "confidence": 1
+    },
+    {
+      "Date": "20-02-2025",
+      "Description": "ATM CASH WITHDRAWAL",
+      "Debit": 20000,
+      "Credit": "",
+      "Balance": 73300,
+      "label": "normal_transaction",
+      "confidence": 1
+    },
+    {
+      "Date": "28-02-2025",
+      "Description": "CLOSING BALANCE",
+      "Debit": "",
+      "Credit": "",
+      "Balance": 73300,
+      "label": "normal_transaction",
+      "confidence": 1
+    }
+  ],
+  "red_flags": [
+    {
+      "flag_type": "Defaulted Loan EMI",
+      "description": "ECS return for HDFC Home Loan EMI due to insufficient funds indicates immediate financial distress.",
+      "Credit": null,
+      "Balance": 194500,
+      "confidence": 1,
+      "related_transaction_dates": [
+        "2025-01-07"
+      ]
+    },
+    {
+      "flag_type": "Large Unexplained Transfer",
+      "description": "Multiple high-value UPI transfers totaling 90,000 to an unknown recipient in a single day, significantly depleting the balance.",
+      "Credit": null,
+      "Balance": 104500,
+      "confidence": 0.95,
+      "related_transaction_dates": [
+        "2025-01-08"
+      ]
+    },
+    {
+      "flag_type": "Suspicious Spending Pattern",
+      "description": "Sequence of negative behaviors including a minimum balance penalty charge and a significant 64% reduction in monthly salary credit from an unknown source.",
+      "Credit": 18000,
+      "Balance": 78300,
+      "confidence": 0.85,
+      "related_transaction_dates": [
+        "2025-01-10",
+        "2025-02-15"
+      ]
+    }
+  ],
+  "red_flag_error": null
+}
